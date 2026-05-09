@@ -45,6 +45,12 @@ public class Admin_Module {
                 System.out.println("*********** View all complaints ***********");
                 System.out.println(" The complaints list: \n" + complaints);
 
+                // Search complaint by ID
+            } else if (Adminchoice == 2) {
+                System.out.println("*********** Search complaint by ID ***********");
+                System.out.println("Enter ID for search: ");
+                int id = Integer.parseInt(input.nextLine());
+
             }
         }
     }
