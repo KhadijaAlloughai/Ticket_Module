@@ -70,6 +70,11 @@ public class Admin_Module {
                     System.out.printf("This ID: %d --> Already CLOSED", id);
                 }
 
+                // Update the status if it is OPEN
+                else {
+                    complaintsStatus.replace(id, "CLOSE");
+                    System.out.printf("%d --> It is Successfuly *CLOSED*\n", id);
+                    System.out.println("The Compalints Status List After Changing --->" + complaintsStatus);
 
 
             }
