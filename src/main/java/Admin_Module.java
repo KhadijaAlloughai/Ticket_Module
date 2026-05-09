@@ -51,6 +51,16 @@ public class Admin_Module {
                 System.out.println("Enter ID for search: ");
                 int id = Integer.parseInt(input.nextLine());
 
+                // Search complaint by ID.
+                if (complaints.containsKey(id)) {
+                    String complaint = complaints.get(id);
+                    System.out.println(complaint);
+                } else {
+                    System.out.printf(" This Id: %d does not exist.", id);
+                }
+
+
+
             }
         }
     }
