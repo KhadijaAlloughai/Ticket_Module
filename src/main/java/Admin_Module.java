@@ -24,5 +24,15 @@ public class Admin_Module {
         complaintsStatus.put(104, " OPEN");
         complaintsStatus.put(105, " OPEN");
 
+        // Protect Admin module with a PIN.
+        System.out.println("............Admin............");
+        System.out.println("Enter PIN number: ");
+        int userPin = Integer.parseInt(input.nextLine());
+        while (userPin != 12345) {
+            System.out.println("Unsuccessful Login :( Try again.");
+            System.out.println("Enter PIN : ");
+            userPin = Integer.parseInt(input.nextLine());
+        }
+
     }
 }
