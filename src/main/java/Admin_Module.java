@@ -16,6 +16,13 @@ public class Admin_Module {
         complaints.put(104, " Poor Product Quality");
         complaints.put(105, " Misleading Product Details");
 
+        // LIST  ID AND COMPLAINTS STATUS
+        HashMap<Integer, String> complaintsStatus = new HashMap<Integer, String>();
+        complaintsStatus.put(101, " OPEN");
+        complaintsStatus.put(102, " OPEN");
+        complaintsStatus.put(103, " OPEN");
+        complaintsStatus.put(104, " OPEN");
+        complaintsStatus.put(105, " OPEN");
 
     }
 }
