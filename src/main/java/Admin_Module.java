@@ -40,7 +40,12 @@ public class Admin_Module {
                     "3. Close a complaint.\n" + "4. Support Staff.\n5. Exit.");
             int Adminchoice = Integer.parseInt(input.nextLine());
 
-        }
+            //View all complaints
+            if (Adminchoice == 1) {
+                System.out.println("*********** View all complaints ***********");
+                System.out.println(" The complaints list: \n" + complaints);
 
+            }
+        }
     }
 }
