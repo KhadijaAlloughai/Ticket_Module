@@ -86,6 +86,22 @@ public class Admin_Module {
                 System.out.println("assign complaints to support staff members: ");
                 HashMap<Integer, String> assignments = new HashMap<>();
                 for (int id = 101; id <= 105; id++) {
+
+                    // Check if ID exists in our records
+                    if (!complaintsStatus.containsKey(id)) {
+                        System.out.println("Complaint ID " + id + " does not exist.");
+                    }
+                    // Check if the status is "CLOSE"
+                    String status = complaintsStatus.get(id);
+                    if ("CLOSE".equalsIgnoreCase(status)) {
+                        System.out.printf("This ID: %d --> Already CLOSED. Assignment not allowed.%n", id);
+                    } else {
+                        // If ID exists and is OPEN, ask for staff name
+                        System.out.print(id + " (Assign to): ");
+                        String complainStaff = input.nextLine();
+                        assignments.put(id, complainStaff);
+                    }
+                }
                 }
 
 
