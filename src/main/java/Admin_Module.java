@@ -102,11 +102,17 @@ public class Admin_Module {
                         assignments.put(id, complainStaff);
                     }
                 }
+                System.out.println("\nFinal Assignments: " + assignments);
+            }
+            //Prevent assigning: 1. Non-existing complaints 2. Closed complaints
+            if (complaintsStatus.equals("CLOSE")) {
+                System.out.println("This ID: %d --> Already CLOSED");
+            } else if (Adminchoice == 5) {
+                System.out.println("Exit.");
+                AdminRunning = false;
                 }
-
-
             }
         }
     }
-}
+
 
