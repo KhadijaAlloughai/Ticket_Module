@@ -75,9 +75,22 @@ public class Admin_Module {
                     complaintsStatus.replace(id, "CLOSE");
                     System.out.printf("%d --> It is Successfuly *CLOSED*\n", id);
                     System.out.println("The Compalints Status List After Changing --->" + complaintsStatus);
+                }
+            }
+
+            // Task 4: Support Staff
+            else if (Adminchoice == 4) {
+                System.out.println("*********** Support Staff. ***********");
+                // Assignments List
+                // Admin can assign complaints to support staff members.
+                System.out.println("assign complaints to support staff members: ");
+                HashMap<Integer, String> assignments = new HashMap<>();
+                for (int id = 101; id <= 105; id++) {
+                }
 
 
             }
         }
     }
 }
+
