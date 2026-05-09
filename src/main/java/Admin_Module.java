@@ -33,6 +33,13 @@ public class Admin_Module {
             System.out.println("Enter PIN : ");
             userPin = Integer.parseInt(input.nextLine());
         }
+        System.out.println("Successful Login :) ");
+        while (AdminRunning) {
+            System.out.println("Admin choices:\n1. View all complaints.\n" +
+                    "2. Search complaint by ID.\n" +
+                    "3. Close a complaint.\n" + "4. Support Staff.\n5. Exit.");
+            int Adminchoice = Integer.parseInt(input.nextLine());
+
 
     }
 }
