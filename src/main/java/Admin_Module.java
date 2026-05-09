@@ -59,6 +59,17 @@ public class Admin_Module {
                     System.out.printf(" This Id: %d does not exist.", id);
                 }
 
+                // Check The Status of complaint
+            } else if (Adminchoice == 3) {
+                System.out.println("*********** Close a complaint. ***********");
+                //Here the list of complaints status before any changes
+                System.out.println(" The Complaints Status list before any changes:\n  " + complaintsStatus);
+                System.out.println("Enter The ID to Check The Status Of Complaint:  ");
+                int id = Integer.parseInt(input.nextLine());
+                if (complaintsStatus.equals("CLOSE")) {
+                    System.out.printf("This ID: %d --> Already CLOSED", id);
+                }
+
 
 
             }
